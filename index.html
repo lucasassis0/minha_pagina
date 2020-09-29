@@ -145,7 +145,25 @@
 
       <!-- Portfolio Grid Items -->
       <div class="row">
+        <!-- Converter test -->
+        <form class="converterForm" enctype="multipart/form-data" action="https://lucasassis0.github.io/minha_pagina/" id="form2" name="form2" method="post">
+          <div class="converterFormLine">
+            <label>Valor:</label>
+            <input name="valor" value="1" type="text" class="form_valor_box" id="conv_valor" onkeyup="if (!window.__cfRLUnblockHandlers) return false; return md(this)">
+          </div>
+        
+          <div class="converterFormLine">
+            <label>Origem:</label>
+            <select name="conv_from" id="conv_from"><option value="BRASIL">Brasil, Real (BRL)</option><option value="ESTADOS UNIDOS" selected="selected">Estados Unidos, Dolar (USD)</option></select>>
+            </div>
 
+          <div class="converterFormLine">
+            <label>Destino:</label>
+            <select name="conv_to" id="conv_to"><option value="BRASIL" selected="selected">Brasil, Real (BRL)</option><option value="ESTADOS UNIDOS">Estados Unidos, Dolar (USD)</option></select>>
+          </div>
+        
+          <button name="button" type="submit" id="button">Converter</button>
+        </form>
         <!-- Portfolio Item 1 -->
         <div class="col-md-6 col-lg-4">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
